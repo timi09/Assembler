@@ -25,7 +25,7 @@ code_seg segment "code"
             sub si, 2; i-2 indx
             add ax, Arr[si]; ax += Arr[i-2]
 
-            add si, 4; i indx (i-2+2)
+            add si, 4; i indx (i-2-2+4 = i)
 
             mov Arr[si], ax; Arr[i] = ax
 
